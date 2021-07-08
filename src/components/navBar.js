@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import './navBar.css';
 import Home from '../components/svg/home';
 
 function navBar() {
@@ -17,27 +16,29 @@ function navBar() {
               <Link className="nav-link" to="/">Home</Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/tariffs">Tariffs</Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/contactUs">Contact Us</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="http://www.bbc.co.uk">Retailers</a>
+              <Link className="nav-link" to="/guestBook">Guest Book</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/whatsOn">Whats On</Link>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="http://www.bbc.co.uk" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
-                Markets
-              </a>
+              <Link className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">Things To Do</Link>
               <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a className="dropdown-item" href="http://www.bbc.co.uk">Regions</a>
-                <a className="dropdown-item" href="http://www.bbc.co.uk">Areas</a>
-                <a className="dropdown-item" href="http://www.bbc.co.uk">Retailer Groups</a>
-                <a className="dropdown-item" href="http://www.bbc.co.uk">Retailers</a>
-                <a className="dropdown-item" href="http://www.bbc.co.uk">Brands</a>
-                <a className="dropdown-item" href="http://www.bbc.co.uk">Retailer Sites</a>
-                <a className="dropdown-item" href="http://www.bbc.co.uk">Retailer Codes</a>
+                <Link className="dropdown-item" to="/venueCymru">Venue Cymru</Link>
+                <Link className="dropdown-item" to="/citySightseeing">City Sight Seeing</Link>
+                <Link className="dropdown-item" to="/snowdonia">Snowdonia</Link>
+                <Link className="dropdown-item" to="/greatOrme">Great Orme</Link>
+                <Link className="dropdown-item" to="/castles">Castles</Link>
             </div>
       </li>
             <li className="nav-item">
-              <a className="nav-link disabled" href="http://www.bbc.co.uk">Admin</a>
+              <a className="nav-link disabled" href="/">Admin</a>
             </li>
           </ul>
           <form className="form-inline my-2 my-lg-0">
