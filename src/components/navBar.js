@@ -35,8 +35,8 @@ function navBar() {
                 <Link className="dropdown-item" to="/snowdonia">Snowdonia</Link>
                 <Link className="dropdown-item" to="/greatOrme">Great Orme</Link>
                 <Link className="dropdown-item" to="/castles">Castles</Link>
-            </div>
-      </li>
+              </div>
+            </li>
             <li className="nav-item">
                 <Link className="nav-link disabled" to="/castles">Admin</Link>
             </li>
